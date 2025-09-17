@@ -26,6 +26,7 @@ const hamburger = document.getElementById('hamburger');
 
 const navbar = document.getElementById('navbar');
 const links = navbar.querySelectorAll('a');
+const border = navbar.querySelectorAll('.boldel');
 
 window.addEventListener('scroll', () => {
   if(window.scrollY > 50) { // scroll > 50px
@@ -40,3 +41,17 @@ window.addEventListener('scroll', () => {
     });
   }
 });
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 50) { // scroll > 50px
+    border.forEach(attribute => {
+      attribute.classList.remove('border-black');
+      attribute.classList.add('border-white');
+    });
+  } else {
+    border.forEach(attribute => {
+      attribute.classList.remove('border-white');
+      attribute.classList.add('border-black');
+    });
+  }
+})

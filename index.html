@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boss Duren</title>
     <link rel="icon" type="image/png" href="Assets/logo-tab.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="sticky top-0 w-full flex items-center px-4 py-1
+    <nav id="navbar" class="sticky top-0 w-full flex items-center px-4 py-
         bg-black/10 bg-opacity-70 backdrop-blur-md 
         z-50 shadow-md transition-all duration-500 justify-between md:px-5 lg:px-20">
 
         <!-- Logo -->
-        <a href="/" class="pl-4">
+        <a href="/" class="">
         <img class="h-16 md:h-18 lg:h-20 w-auto"
             src="Assets/logo.png"
             alt="logo Company">
         </a>
 
         <!-- Desktop menu -->
-        <div class="hidden md:flex items-center space-x-12 mx-auto">
-        <a href="#program" class="text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500">Home</a>
-        <a href="#program" class="text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500">About Us</a>
-        <a href="#galeri" class="text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500">Product</a>
+        <div class="hidden md:flex items-center mx-auto space-x-5">
+            <a href="#program" class="py-5 px-3 border-b-[12px] border-black text-black font-bold text-xl transition-colors duration-500 boldel rounded-lg">Home</a>
+            <a href="#program" class="py-5 px-3 text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500 boldel">About Us</a>
+            <a href="#galeri" class="py-5 px-3 text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500 boldel">Product</a>
         </div>
 
         <!-- Button Contact Us -->
@@ -35,6 +37,10 @@
                 rounded-xl shadow-md transition transform hover:scale-105 transition-colors duration-500">
         Contact Us
         </a>
+        <!-- judul di mobile -->
+        <h1 class="font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 md:hidden">
+        Boss Duren
+        </h1>
 
         <!-- Hamburger button (mobile only) -->
         <button id="hamburger" class="ml-auto md:hidden text-gray-700 focus:outline-none">
@@ -84,7 +90,86 @@
             </a>
         </div>
     </section>
+<section class="bg-gradient-to-b from-green-50 to-yellow-50 py-20 before:absolute before:inset-0 before:flex before:items-center before:justify-center
+            before:content-['a'] before:w-40 before:h-40 before:rounded-full before:bg-white/20 before:mx-auto before:mt-10 before:z-10 relative">
+  <h2 class="text-4xl font-extrabold text-center text-green-900 mb-14 tracking-wide">
+    Pencapaian Kami
+  </h2>
 
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+    
+    <!-- Orderan -->
+    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
+                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+      <div class="absolute inset-0 bg-cover bg-center"
+           style="background-image: url('Assets/orderan.png')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-green-600/60"></div>
+      <div class="relative p-10 text-white">
+        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="500">0</div>
+        <p class="mt-3 text-lg font-semibold tracking-wide">Ribu Orderan</p>
+      </div>
+    </div>
+
+    <!-- Petani -->
+    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
+                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+      <div class="absolute inset-0 bg-cover bg-center"
+           style="background-image: url('Assets/petani.png')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-green-600/60"></div>
+      <div class="relative p-10 text-white">
+        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="100">0</div>
+        <p class="mt-3 text-lg font-semibold tracking-wide">Petani Mitra</p>
+      </div>
+    </div>
+
+    <!-- Buah -->
+    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
+                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+      <div class="absolute inset-0 bg-cover bg-[30%_70%]"
+           style="background-image: url('Assets/buah.png')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 to-green-600/70"></div>
+      <div class="relative p-10 text-white">
+        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="1000">0</div>
+        <p class="mt-3 text-lg font-semibold tracking-wide">Jenis Buah</p>
+      </div>
+    </div>
+
+    <!-- Negara -->
+    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
+                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+      <div class="absolute inset-0 bg-cover bg-center"
+           style="background-image: url('Assets/benua.jpg')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 to-green-600/70"></div>
+      <div class="relative p-10 text-white">
+        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="40">0</div>
+        <p class="mt-3 text-lg font-semibold tracking-wide">Negara Ekspor</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200; // semakin kecil semakin cepat
+  
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText.replace(/\D/g, ''); // hapus simbol
+      const inc = target / speed;
+
+      if(count < target) {
+        counter.innerText = Math.ceil(count + inc).toLocaleString("id-ID");
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target.toLocaleString("id-ID");
+      }
+    };
+    updateCount();
+  });
+</script>
 
 
 
