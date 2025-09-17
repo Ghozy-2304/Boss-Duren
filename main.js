@@ -55,3 +55,22 @@ window.addEventListener('scroll', () => {
     });
   }
 })
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // semakin kecil semakin cepat
+  
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText.replace(/\D/g, ''); // hapus simbol
+    const inc = target / speed;
+
+    if(count < target) {
+      counter.innerText = Math.ceil(count + inc).toLocaleString("id-ID");
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target.toLocaleString("id-ID");
+    }
+  };
+  updateCount();
+});
