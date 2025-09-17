@@ -91,7 +91,7 @@
         </div>
     </section>
 <section class="bg-gradient-to-b from-green-50 to-yellow-50 py-20 before:absolute before:inset-0 before:flex before:items-center before:justify-center
-            before:content-['a'] before:w-40 before:h-40 before:rounded-full before:bg-white/20 before:mx-auto before:mt-10 before:z-10 relative">
+            before:content-[' '] before:w-90 before:h-90 before:rounded-full before:bg-black/5 before:mx-auto before:mt-10 before:z-2 relative">
   <h2 class="text-4xl font-extrabold text-center text-green-900 mb-14 tracking-wide">
     Pencapaian Kami
   </h2>
@@ -105,7 +105,7 @@
            style="background-image: url('Assets/orderan.png')"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-green-600/60"></div>
       <div class="relative p-10 text-white">
-        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="500">0</div>
+        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="500">0</div>
         <p class="mt-3 text-lg font-semibold tracking-wide">Ribu Orderan</p>
       </div>
     </div>
@@ -117,7 +117,7 @@
            style="background-image: url('Assets/petani.png')"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-green-600/60"></div>
       <div class="relative p-10 text-white">
-        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="100">0</div>
+        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="100">0</div>
         <p class="mt-3 text-lg font-semibold tracking-wide">Petani Mitra</p>
       </div>
     </div>
@@ -129,7 +129,7 @@
            style="background-image: url('Assets/buah.png')"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 to-green-600/70"></div>
       <div class="relative p-10 text-white">
-        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="1000">0</div>
+        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="78">0</div>
         <p class="mt-3 text-lg font-semibold tracking-wide">Jenis Buah</p>
       </div>
     </div>
@@ -141,7 +141,7 @@
            style="background-image: url('Assets/benua.jpg')"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 to-green-600/70"></div>
       <div class="relative p-10 text-white">
-        <div class="text-6xl font-extrabold counter drop-shadow-lg" data-target="40">0</div>
+        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="40">0</div>
         <p class="mt-3 text-lg font-semibold tracking-wide">Negara Ekspor</p>
       </div>
     </div>
@@ -149,27 +149,52 @@
   </div>
 </section>
 
+<section class="bg-[#fdf5e6] py-16">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Bagian Teks -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        Tentang Kami
+      </h2>
+      <!-- perjalanan -->
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Perjalanan kami dimulai dari sesuatu yang sederhana — hanya beberapa pohon durian dan sebidang tanah kecil. Dengan penuh keyakinan, kami berusaha meyakinkan pasar bahwa durian yang kami miliki bukan sekadar buah biasa, tetapi hasil dari kerja keras, kualitas, dan cita rasa terbaik.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Seiring waktu, kepercayaan itu tumbuh. Untuk memperluas lahan dan meningkatkan produksi, kami membuka peluang investasi melalui saham sebagai modal pengembangan. Namun, perjalanan ini tidak selalu mulus. Kami sempat mengalami kerugian besar ketika pohon-pohon durian terserang penyakit dan hama yang mengancam keberlangsungan usaha.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+       Alih-alih menyerah, kami menjadikannya pelajaran berharga. Kami mulai menerapkan teknologi perkebunan modern untuk memantau kesehatan dan pertumbuhan setiap pohon. Dengan pendekatan ini, kami dapat merawat pohon durian lebih baik, mencegah serangan hama, dan menjaga kualitas panen.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Kini, setelah melalui berbagai tantangan, kami berhasil berkembang menjadi perusahaan yang dipercaya oleh banyak klien dan mitra, baik di dalam maupun luar negeri. Lebih dari sekadar bisnis, kami juga menjadikan pengalaman ini sebagai sarana berbagi pengetahuan tentang bagaimana merawat durian dengan baik dan benar, agar generasi berikutnya bisa menikmati buah durian dengan kualitas terbaik.
+      </p>
+    </div>
 
-<script>
-  const counters = document.querySelectorAll('.counter');
-  const speed = 200; // semakin kecil semakin cepat
-  
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText.replace(/\D/g, ''); // hapus simbol
-      const inc = target / speed;
+    <!-- Bagian Gambar -->
+    <div class="relative">
+        <div class="flex justify-between mb-6">
+            <img src="Assets/duren-pohon.jpg" alt="Durian" 
+            class="rounded-2xl shadow-lg object-cover w-auto h-64">
 
-      if(count < target) {
-        counter.innerText = Math.ceil(count + inc).toLocaleString("id-ID");
-        setTimeout(updateCount, 20);
-      } else {
-        counter.innerText = target.toLocaleString("id-ID");
-      }
-    };
-    updateCount();
-  });
-</script>
+            <img src="Assets/duren-banyak.jpg" alt="Durian" 
+            class="rounded-2xl shadow-lg object-cover w-auto h-64">
+
+            <img src="Assets/duren-ditali.jpg" alt="Durian" 
+            class="rounded-2xl shadow-lg object-cover w-[30%] h-64 hidden lg:block">
+        </div>
+        <img src="Assets/duren-dibawa.jpg" alt="Durian" 
+           class="rounded-2xl shadow-lg object-cover object-[30%_35%] w-full h-64">
+
+      <!-- Aksen kecil -->
+      <div class="absolute -top-4 -left-4 w-24 h-24 bg-black/10 rounded-full -z-10"></div>
+      <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-black/20 rounded-lg -z-10"></div>
+    </div>
+
+  </div>
+</section>
+
 
 
 
