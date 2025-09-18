@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" href="Assets/logo-tab.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Free CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
@@ -32,11 +35,11 @@
 
         <!-- Button Contact Us -->
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
-        target="_blank" rel="noopener noreferrer"
-        class="hidden md:inline-block bg-[#2E7D32] hover:bg-emerald-600 text-white font-semibold px-6 py-2.5
-                rounded-xl shadow-md transition transform hover:scale-105 transition-colors duration-500">
-        Contact Us
-        </a>
+   target="_blank" rel="noopener noreferrer"
+   class="hidden md:inline-block bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold px-6 py-2.5
+          rounded-xl shadow-md transition transform hover:scale-105 duration-300">
+  Contact Us
+</a>
         <!-- judul di mobile -->
         <a class="font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 md:hidden">
         Boss Duren
@@ -90,60 +93,39 @@
             </a>
         </div>
     </section>
-<section class="bg-gradient-to-b from-green-50 to-yellow-50 py-20 before:absolute before:inset-0 before:flex before:items-center before:justify-center
-            before:content-[' '] before:w-90 before:h-90 before:rounded-full before:bg-black/5 before:mx-auto before:mt-10 before:z-2 relative">
-  <h2 class="text-4xl font-extrabold text-center text-green-900 mb-14 tracking-wide">
-    Pencapaian Kami
-  </h2>
-
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+<section class="bg-black text-white py-16 px-6 md:px-20">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
     
     <!-- Orderan -->
-    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
-                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
-      <div class="absolute inset-0 bg-cover bg-center"
-           style="background-image: url('Assets/orderan.png')"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-green-600/60"></div>
-      <div class="relative p-10 text-white">
-        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="500">0</div>
-        <p class="mt-3 text-lg font-semibold tracking-wide">Ribu Orderan</p>
-      </div>
+    <div>
+      <h3 class="text-4xl font-bold mb-2">
+        <span class="counter" data-target="50000000">0</span>+
+      </h3>
+      <p class="text-gray-300">Orderan</p>
     </div>
 
-    <!-- Petani -->
-    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
-                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
-      <div class="absolute inset-0 bg-cover bg-center"
-           style="background-image: url('Assets/petani.png')"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-green-600/60"></div>
-      <div class="relative p-10 text-white">
-        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="100">0</div>
-        <p class="mt-3 text-lg font-semibold tracking-wide">Petani Mitra</p>
-      </div>
+    <!-- Partner Petani -->
+    <div>
+      <h3 class="text-4xl font-bold mb-2">
+        <span class="counter" data-target="100">0</span>+
+      </h3>
+      <p class="text-gray-300">Partner Petani</p>
     </div>
 
-    <!-- Buah -->
-    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
-                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
-      <div class="absolute inset-0 bg-cover bg-[30%_70%]"
-           style="background-image: url('Assets/buah.png')"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 to-green-600/70"></div>
-      <div class="relative p-10 text-white">
-        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="78">0</div>
-        <p class="mt-3 text-lg font-semibold tracking-wide">Jenis Buah</p>
-      </div>
+    <!-- Jenis Buah -->
+    <div>
+      <h3 class="text-4xl font-bold mb-2">
+        <span class="counter" data-target="50">0</span>+
+      </h3>
+      <p class="text-gray-300">Jenis Buah</p>
     </div>
 
-    <!-- Negara -->
-    <div class="relative rounded-3xl overflow-hidden shadow-xl text-center 
-                transform hover:-translate-y-3 hover:scale-105 transition-all duration-300">
-      <div class="absolute inset-0 bg-cover bg-center"
-           style="background-image: url('Assets/benua.jpg')"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 to-green-600/70"></div>
-      <div class="relative p-10 text-white">
-        <div class="text-6xl md:text-5xl font-extrabold counter drop-shadow-lg" data-target="40">0</div>
-        <p class="mt-3 text-lg font-semibold tracking-wide">Negara Ekspor</p>
-      </div>
+    <!-- Negara Ekspor -->
+    <div>
+      <h3 class="text-4xl font-bold mb-2">
+        <span class="counter" data-target="40">0</span>+
+      </h3>
+      <p class="text-gray-300">Negara Ekspor</p>
     </div>
 
   </div>
@@ -392,7 +374,7 @@
     <h3 class="text-center text-2xl font-bold mb-6">Klien & Partner</h3>
 
     <!-- Horizontal scroll / responsive -->
-    <div class="flex gap-8 items-center justify-center overflow-x-auto py-4 px-2">
+    <div class="grid grid-cols-2 gap-4 md:flex md:gap-1 md:items-center md:justify-center md:overflow-x-auto md:py-4 md:px-2">
       <!-- contoh item -->
       <div class="flex-shrink-0 w-40 flex items-center justify-center">
         <img src="Assets/dt.jpg" alt="Partner 1"
@@ -418,13 +400,110 @@
         <img src="Assets/logo4.jpg" alt="Partner 3"
              class="max-h-20 rounded-xl object-contain filter grayscale hover:grayscale-0 transition-all">
       </div>
-
-      <!-- tambahkan sebanyak perlu -->
     </div>
   </div>
 </section>
 
+<!-- CTA & Contact -->
+<section id="contact" class="bg-black text-white py-16 px-6 md:px-20">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+    <!-- Left: CTA + kontak info -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-3xl font-bold mb-4">Siap Kerja Sama?</h2>
+      <p class="text-gray-300 mb-6">
+        Kami terbuka untuk kerja sama dengan petani, distributor, dan partner lain. Hubungi kami untuk diskusi lebih lanjut.
+      </p>
 
+      <div class="space-y-3">
+        <p class="text-gray-300"><strong>Email:</strong> <a href="mailto:hello@yourdomain.com" class="underline">hello@yourdomain.com</a></p>
+        <p class="text-gray-300"><strong>WhatsApp:</strong> <a href="https://wa.me/6282299498874" target="_blank" class="underline">+62 822-9949-8874</a></p>
+        <p class="text-gray-300"><strong>Alamat:</strong> Jl. Raya Jonggol-Dayeuh, Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830</p>
+      </div>
+
+      <div class="mt-6">
+        <a href="mailto:hello@yourdomain.com" class="inline-block bg-[#fdf6e3] text-black font-semibold px-6 py-3 rounded-lg shadow hover:scale-[1.02] transition">Hubungi Kami</a>
+        <a href="https://wa.me/6282299498874" target="_blank" class="ml-4 inline-block border border-white px-6 py-3 rounded-lg hover:bg-white/10 transition">Chat WA</a>
+      </div>  
+    </div>
+
+    <!-- Right: Contact form -->
+    <div>
+      <!-- NOTE: action="#" -> ganti dengan endpoint form (Formspree / Netlify / backend) -->
+      <form action="#" method="POST" class="bg-white text-black rounded-2xl p-6 shadow">
+        <label class="block mb-3">
+          <span class="text-sm font-medium">Nama</span>
+          <input type="text" name="name" required class="mt-1 block w-full rounded-md border-gray-200 p-3" placeholder="Nama lengkap">
+        </label>
+
+        <label class="block mb-3">
+          <span class="text-sm font-medium">Email</span>
+          <input type="email" name="email" required class="mt-1 block w-full rounded-md border-gray-200 p-3" placeholder="email@contoh.com">
+        </label>
+
+        <label class="block mb-3">
+          <span class="text-sm font-medium">Pesan</span>
+          <textarea name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-200 p-3" placeholder="Tulis pesan singkat..."></textarea>
+        </label>
+
+        <div class="text-right">
+          <button type="submit" class="bg-black text-white px-5 py-3 rounded-lg font-semibold hover:opacity-90 transition">Kirim Pesan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Optional: map -->
+  <div class="max-w-6xl mx-auto mt-8">
+    <!-- Ganti src iframe dengan embed Google Maps lokasi perusahaan -->
+<div class="w-full overflow-hidden rounded-lg shadow-md">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4005.262759370186!2d107.03556067504014!3d-6.525282293467297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMK%20IDN%20Boarding%20School!5e1!3m2!1sid!2sid!4v1758161181573!5m2!1sid!2sid" 
+    class="w-full h-56 md:h-72 lg:h-96 border-0 rounded-lg"
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white">
+  <div class="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+    <!-- Brand / Logo -->
+    <div class="flex flex-col space-y-3">
+      <h4 class="text-2xl font-bold">Boss Duren</h4>
+      <p class="text-gray-400 text-sm">
+        Menyediakan durian segar & olahan durian premium langsung dari perkebunan.
+      </p>
+    </div>
+
+    <!-- Navigasi -->
+    <div class="flex flex-col space-y-2">
+      <h5 class="font-semibold">Navigasi</h5>
+      <a href="#partners" class="text-gray-400 hover:text-white transition">Klien & Partner</a>
+      <a href="#contact" class="text-gray-400 hover:text-white transition">Kontak</a>
+      <a href="#about" class="text-gray-400 hover:text-white transition">Tentang Kami</a>
+    </div>
+
+    <!-- Sosial Media -->
+    <div class="flex flex-col space-y-2">
+      <h5 class="font-semibold">Ikuti Kami</h5>
+      <div class="flex gap-4 mt-2">
+        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-800 mt-6">
+    <div class="max-w-6xl mx-auto px-6 py-4 text-center text-gray-500 text-sm">
+      &copy; 2025 Durian Company. All rights reserved.
+    </div>
+  </div>
+</footer>
 
 
 
