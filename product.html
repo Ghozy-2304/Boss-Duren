@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky top-0 w-full flex items-center px-4 py-
+        bg-black/10 bg-opacity-70 backdrop-blur-md 
+        z-50 shadow-md transition-all duration-500 justify-between md:px-5 lg:px-20">
+
+        <!-- Logo -->
+        <a href="/" class="">
+        <img class="h-16 md:h-18 lg:h-20 w-auto"
+            src="Assets/logo.png"
+            alt="logo Company">
+        </a>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex items-center mx-auto space-x-5">
+           
+            <a href="index.html" 
+              class="teks nav-link py-5 px-3 text-black font-bold text-xl transition-all duration-300 ease-in-out boldel rounded-lg hover:text-gray-500">
+              Home
+            </a>
+            <a href="#tentang-kami" 
+              class="teks py-5 px-3 border-b-[10px] border-black border-black text-black font-bold text-xl transition-all duration-300 ease-in-out boldel rounded-lg">
+              Produk Kami
+            </a>
+
+        </div>
+
+        <!-- Button Contact Us -->
+          <a href="https://wa.me/6282299498874"
+            target="_blank"
+            class="hidden md:inline-block bg-green-700 hover:bg-green-800 hover:scale-105 text-white font-bold px-5 py-3 rounded-xl text-center shadow-lg transition duration-300">
+            🌿 Hubungi Kami
+          </a>
+        <!-- judul di mobile -->
+        <a class="teks font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 md:hidden">
+        Boss Duren
+        </a>
+
+        <!-- Hamburger button (mobile only) -->
+        <button id="hamburger" class="teks ml-auto md:hidden text-black focus:outline-none">
+        <svg class="w-8 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        </button>
+    </nav>
+
+    <!-- Sidebar mobile menu -->
+<div id="mobileMenu"
+    class="fixed top-0 right-0 h-full w-64 bg-gradient-to-b from-yellow-50 to-green-50 shadow-xl transform translate-x-full 
+          transition-transform duration-300 ease-in-out z-50 rounded-l-2xl border-l-4 border-green-700">
+    
+    <!-- Header close -->
+    <div class="flex justify-between items-center px-6 py-4 border-b border-green-200">
+        <h2 class="text-lg font-bold text-green-800">🍈 Boss Duren</h2>
+        <button id="closeMenu" class="text-green-700 hover:text-green-900 font-black text-xl">
+            ✕
+        </button>
+    </div>
+
+    <!-- Menu items -->
+    <div class="flex flex-col p-6 space-y-3">
+        <a href="#home" 
+           class="nav-mobile menuMobile text-white bg-yellow-400 font-semibold rounded-lg px-4 py-2 transition">
+           🏠Home
+        </a>
+        <a href="#tentang-kami" 
+           class="nav-mobile menuMobile text-green-900 font-semibold hover:bg-yellow-400 hover:text-white rounded-lg px-4 py-2 transition">
+           🍈Produk Kami
+        </a>
+
+        
+        <!-- CTA -->
+        <a href="https://wa.me/6282299498874"
+           target="_blank"
+           class="mt-4 bg-green-700 hover:bg-green-800 text-white font-bold px-5 py-3 rounded-xl text-center shadow-lg transition">
+           🌿 Hubungi Kami
+        </a>
+    </div>
+</div>
+
+<section class="relative bg-gradient-to-r from-green-100 via-yellow-50 to-green-100 py-20 px-6 overflow-hidden">
+
+  <div class="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <!-- Text -->
+    <div class="text-center md:text-left md:w-1/2 z-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-green-900 mb-4 leading-tight">
+        Produk Unggulan <span class="text-yellow-600">Boss Duren</span>
+      </h1>
+      <p class="text-lg text-green-800 mb-6">
+        Dari buah segar, frozen, hingga bibit pilihan – semua ada di sini. 
+        Nikmati kualitas durian terbaik langsung dari kebun.
+      </p>
+      <div class="flex justify-center md:justify-start gap-4">
+        <a href="#kategori" 
+           class="px-6 py-3 bg-green-700 text-white font-semibold rounded-2xl shadow-lg hover:bg-green-800 transition">
+          Lihat Produk
+        </a>
+        <a href="#promo" 
+           class="px-6 py-3 bg-yellow-500 text-green-900 font-semibold rounded-2xl shadow-lg hover:bg-yellow-600 transition">
+          Promo Spesial
+        </a>
+      </div>
+    </div>
+
+    <!-- Gambar Hero -->
+    <div class="md:w-1/2 flex justify-center z-10">
+      <img src="Assets/duren-banyak.jpg" 
+           alt="Durian Hero" 
+           class="w-[350px] h-[350px] object-cover rounded-2xl shadow-2xl border-4 border-green-600" />
+    </div>
+  </div>
+</section>
+
+<section id="kategori" class="py-20 bg-white relative">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Judul Section -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-green-900">
+        Kategori Produk Bos Duren
+      </h2>
+      <p class="text-green-700 mt-4 text-lg">
+        Pilih sesuai kebutuhanmu – dari buah segar hingga bibit unggul.
+      </p>
+    </div>
+
+    <!-- Grid Kategori -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- Buah Segar -->
+      <a href="#buah" 
+         class="group bg-gradient-to-b from-green-100 to-yellow-50 rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="Assets/buah-duren.png" 
+             alt="Durian Segar" 
+             class="mx-auto w-24 h-auto object-contain mb-4 group-hover:scale-110 transition" />
+        <h3 class="text-xl font-bold text-green-900">Buah Segar</h3>
+        <p class="text-green-700 mt-2 text-sm">Durian lokal & premium, siap santap.</p>
+      </a>
+
+      <!-- Frozen -->
+      <a href="#frozen" 
+         class="group bg-gradient-to-b from-green-100 to-yellow-50 rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="Assets/duren-frozen.png" 
+             alt="Frozen Durian" 
+             class="mx-auto w-24 h-24 object-contain mb-4 group-hover:scale-110 transition" />
+        <h3 class="text-xl font-bold text-green-900">Durian Frozen</h3>
+        <p class="text-green-700 mt-2 text-sm">Daging durian beku, praktis & tahan lama.</p>
+      </a>
+
+      <!-- Olahan -->
+      <a href="#olahan" 
+         class="group bg-gradient-to-b from-green-100 to-yellow-50 rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="Assets/duren-pancake.png" 
+             alt="Olahan Durian" 
+             class="mx-auto w-24 h-24 object-contain mb-4 group-hover:scale-110 transition" />
+        <h3 class="text-xl font-bold text-green-900">Olahan Durian</h3>
+        <p class="text-green-700 mt-2 text-sm">Pancake, es krim, dodol, dan lainnya.</p>
+      </a>
+
+      <!-- Bibit -->
+      <a href="#bibit" 
+         class="group bg-gradient-to-b from-green-100 to-yellow-50 rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="Assets/bibit-duren.png" 
+             alt="Bibit Durian" 
+             class="mx-auto w-24 h-24 object-contain mb-4 group-hover:scale-110 transition" />
+        <h3 class="text-xl font-bold text-green-900">Bibit Durian</h3>
+        <p class="text-green-700 mt-2 text-sm">Bibit unggul siap tanam di kebunmu.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Produk Detail ===================== -->
+<section id="buah" class="py-20 bg-green-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-green-900 text-center mb-12">
+      🍈 Buah Durian Segar
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Card Produk -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLEdf3bmyRq5Nu0vaASRASBgCfmBLFLIoi5A&s" 
+                alt="Musang King" 
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-green-900">Durian Musang King</h3>
+                <p class="text-green-700 text-sm mt-2">Manis, legit, dan creamy.</p>
+                <p class="text-lg font-bold text-yellow-600 mt-4">Rp 500.000 / kg</p>
+                <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+                Beli Sekarang
+                </button>
+            </div>
+        </div>
+       
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnI0XUERsfn13f03E23phanEG6dPRmO7gsNw&s" 
+                alt="Musang King" 
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+            <h3 class="text-xl font-bold text-green-900">Durian Bawor</h3>
+            <p class="text-green-700 text-sm mt-2">Pahit, Besar</p>
+            <p class="text-lg font-bold text-yellow-600 mt-4">Rp 300.000 / kg</p>
+            <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+                Beli Sekarang
+            </button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDUC0ELjT3p8jJFJqiIRgvXvRgzQdi0b3ugQ&s" 
+                alt="Musang King" 
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+            <h3 class="text-xl font-bold text-green-900">Durian Monthong</h3>
+            <p class="text-green-700 text-sm mt-2">Manis, murah, mantap.</p>
+            <p class="text-lg font-bold text-yellow-600 mt-4">Rp 150.000 / kg</p>
+            <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+                Beli Sekarang
+            </button>
+            </div>
+        </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section id="frozen" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-green-900 text-center mb-12">
+      ❄️ Durian Frozen
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <!-- Card Produk -->
+        <div class="bg-green-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQLSIf-oTNXmux7foO2o06beL9GK3uM4Ozg&s" 
+                alt="Frozen Durian Box" 
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+            <h3 class="text-xl font-bold text-green-900">Frozen Bawor Box 1kg</h3>
+            <p class="text-green-700 text-sm mt-2">Praktis, higienis, dan tahan lama.</p>
+            <p class="text-lg font-bold text-yellow-600 mt-4">Rp 180.000 / box</p>
+            <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+                Beli Sekarang
+            </button>
+            </div>
+        </div>
+
+        <div class="bg-green-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdsUH_SiRcseE_ZHRBM0td6qZOF_BmCnfNfQ&s" 
+             alt="Frozen Durian Box" 
+             class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Montong Frozen Box 1kg</h3>
+          <p class="text-green-700 text-sm mt-2">Enak, Manis, dan tahan lama.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 200.000 / box</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+        </div>
+
+        <div class="bg-green-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XW4mDKJAf6jq2cwsrMPGZfT2TK8Av8Q2lg&s" 
+             alt="Frozen Durian Box" 
+             class="w-full h-48 object-cover object-bottom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Musang King Frozen Box 1kg</h3>
+          <p class="text-green-700 text-sm mt-2">Superme, Gold, dan Execlusive.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 900.000 / box</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="olahan" class="py-20 bg-green-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-green-900 text-center mb-12">
+      🍨 Olahan Durian
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Card Produk -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VsDP8SWF9vPjw9cMqPG_khpWMj6BBM_RvA&s" 
+             alt="Pancake Durian" 
+             class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Pancake Durian</h3>
+          <p class="text-green-700 text-sm mt-2">Lembut, creamy, dan harum durian.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 75.000 / box</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmpRPViz2P9KljBsUiPE1rJxgZ9Yk2Gm4DEQ&s" 
+             alt="Pancake Durian" 
+             class="w-full h-48 object-cover object-center">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Full Daging Durian</h3>
+          <p class="text-green-700 text-sm mt-2">Banyak, Lembut, dan Tahan Lama.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 50.000 / box</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzRZ2qTN0frCShsGNgTKZ3SzwjSRrKfCXlpQ&s" 
+             alt="Pancake Durian" 
+             class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Es Krim Durian</h3>
+          <p class="text-green-700 text-sm mt-2">Lembut, Enak, dan Manis.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 10.000 / box</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="bibit" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-green-900 text-center mb-12">
+      🌱 Bibit Durian
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Card Produk -->
+      <div class="bg-green-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX08lhluGHFgXDeffazZ8T73tRLLWG61hKGA&s" 
+             alt="Bibit Durian Monthong" 
+             class="w-full h-48 object-cover object-[50%_80%]">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Bibit Durian Siap</h3>
+          <p class="text-green-700 text-sm mt-2">Sudah siap tanam.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 500.000 / bibit</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-green-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="Assets/bibit-duren.png" 
+             alt="Bibit Durian Monthong" 
+             class="w-full h-48 object-cover object-[50%_70%]">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Bibit Durian Monthong</h3>
+          <p class="text-green-700 text-sm mt-2">Umur 6 bulan, siap tanam.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 120.000 / bibit</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-green-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1G9S9vR4IzAxh-qBoYD-Co2oMG2aRx-qzQ&s" 
+             alt="Bibit Durian Monthong" 
+             class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-green-900">Bibit Durian Bawor</h3>
+          <p class="text-green-700 text-sm mt-2">Umur 10 bulan, siap tanam.</p>
+          <p class="text-lg font-bold text-yellow-600 mt-4">Rp 200.000 / bibit</p>
+          <button class="mt-4 w-full py-2 bg-green-700 text-white rounded-xl hover:bg-green-800 transition">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="promo" class="relative py-20 bg-gradient-to-r from-yellow-100 via-green-50 to-yellow-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Judul -->
+    <h2 class="text-3xl md:text-4xl font-extrabold text-green-900 mb-6">
+      🔥 Promo Spesial Bos Duren
+    </h2>
+    <p class="text-green-700 mb-12 text-lg">
+      Nikmati diskon terbatas untuk produk pilihan. Jangan sampai kehabisan!
+    </p>
+
+    <!-- Grid Promo -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Promo 1 -->
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition">
+        <div class="relative">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XW4mDKJAf6jq2cwsrMPGZfT2TK8Av8Q2lg&s" 
+               alt="Promo Musang King" 
+               class="w-full h-56 object-cover object-[50%_70%]">
+          <span class="absolute top-4 left-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-lg shadow">
+            -77%
+          </span>
+        </div>
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-bold text-green-900">Durian Musang King</h3>
+          <p class="text-green-700 mt-2">Best Seller! Rasa manis legit & creamy.</p>
+          <div class="flex items-center gap-3 mt-4">
+            <span class="line-through text-gray-500">Rp 900.000</span>
+            <span class="text-2xl font-bold text-yellow-600">Rp 200.000 / kg</span>
+          </div>
+          <button class="mt-6 w-full py-2 bg-green-700 text-white font-semibold rounded-xl hover:bg-green-800 transition">
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+
+      <!-- Promo 2 -->
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition">
+        <div class="relative">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdsUH_SiRcseE_ZHRBM0td6qZOF_BmCnfNfQ&s" 
+               alt="Promo Frozen" 
+               class="w-full h-56 object-cover">
+          <span class="absolute top-4 left-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-lg shadow">
+            Paket Hemat
+          </span>
+        </div>
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-bold text-green-900">Paket Frozen Durian 2kg</h3>
+          <p class="text-green-700 mt-2">Cocok untuk stok di rumah, lebih hemat!</p>
+          <div class="flex items-center gap-3 mt-4">
+            <span class="line-through text-gray-500">Rp 400.000</span>
+            <span class="text-2xl font-bold text-yellow-600">Rp 300.000 / paket</span>
+          </div>
+          <button class="mt-6 w-full py-2 bg-green-700 text-white font-semibold rounded-xl hover:bg-green-800 transition">
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16">
+      <a href="#contact" 
+         class="px-8 py-4 bg-yellow-500 text-green-900 text-lg font-bold rounded-2xl shadow-lg hover:bg-yellow-600 transition">
+        🎉 Lihat Semua Promo
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="testimoni" class="py-20 bg-green-50 relative">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Judul -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-green-900">
+        Apa Kata Pelanggan Kami?
+      </h2>
+      <p class="text-green-700 mt-4 text-lg">
+        Kepuasan pelanggan adalah prioritas Bos Duren.
+      </p>
+    </div>
+
+    <!-- Grid Testimoni -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimoni 1 -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="Assets/profil.png" 
+               alt="Pelanggan 1" 
+               class="w-14 h-14 rounded-full object-cover border-2 border-green-600">
+          <div>
+            <h3 class="font-bold text-green-900">Andi Pratama</h3>
+            <p class="text-sm text-green-700">Pelanggan Tetap</p>
+          </div>
+        </div>
+        <!-- Rating -->
+        <div class="flex text-yellow-500 mb-3">
+          ⭐⭐⭐⭐⭐
+        </div>
+        <!-- Komentar -->
+        <p class="text-green-800 text-sm">
+          Durian Musang King nya mantap banget, creamy dan manis! 
+          Packing juga rapi, sampai rumah masih fresh.
+        </p>
+      </div>
+
+      <!-- Testimoni 2 -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="Assets/profil.png" 
+               alt="Pelanggan 2" 
+               class="w-14 h-14 rounded-full object-cover border-2 border-green-600">
+          <div>
+            <h3 class="font-bold text-green-900">Siti Aisyah</h3>
+            <p class="text-sm text-green-700">Pelanggan Baru</p>
+          </div>
+        </div>
+        <!-- Rating -->
+        <div class="flex text-yellow-500 mb-3">
+          ⭐⭐⭐⭐⭐
+        </div>
+        <!-- Komentar -->
+        <p class="text-green-800 text-sm">
+          Pertama kali coba frozen durian di sini, rasanya legit 
+          dan praktis banget. Anak-anak juga suka!
+        </p>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="Assets/profil.png" 
+               alt="Pelanggan 3" 
+               class="w-14 h-14 rounded-full object-cover border-2 border-green-600">
+          <div>
+            <h3 class="font-bold text-green-900">Budi Santoso</h3>
+            <p class="text-sm text-green-700">Petani Lokal</p>
+          </div>
+        </div>
+        <!-- Rating -->
+        <div class="flex text-yellow-500 mb-3">
+          ⭐⭐⭐⭐☆
+        </div>
+        <!-- Komentar -->
+        <p class="text-green-800 text-sm">
+          Bibit duriannya sehat dan bagus, sudah ditanam di kebun. 
+          Mudah-mudahan cepat berbuah!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-20 bg-white relative">
+  <div class="max-w-4xl mx-auto px-6">
+    <!-- Judul -->
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-green-900">
+        ❓ Pertanyaan yang Sering Diajukan
+      </h2>
+      <p class="text-green-700 mt-4 text-lg">
+        Berikut beberapa pertanyaan populer dari pelanggan Boss Duren.
+      </p>
+    </div>
+
+    <!-- FAQ List -->
+    <div class="space-y-6">
+      <!-- FAQ 1 -->
+      <div class="bg-green-50 rounded-2xl shadow-md p-6">
+        <h3 class="font-bold text-green-900 text-lg mb-2">
+          Apakah durian frozen aman dikirim ke luar kota?
+        </h3>
+        <p class="text-green-700 text-sm leading-relaxed">
+          Ya, durian frozen dikemas dengan vakum + box khusus sehingga tetap
+          segar walaupun perjalanan jauh.
+        </p>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-green-50 rounded-2xl shadow-md p-6">
+        <h3 class="font-bold text-green-900 text-lg mb-2">
+          Berapa lama durian frozen bisa bertahan?
+        </h3>
+        <p class="text-green-700 text-sm leading-relaxed">
+          Jika disimpan di freezer, durian frozen bisa bertahan hingga 6 bulan
+          tanpa mengurangi kualitas rasa.
+        </p>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-green-50 rounded-2xl shadow-md p-6">
+        <h3 class="font-bold text-green-900 text-lg mb-2">
+          Bibit durian berapa lama sampai berbuah?
+        </h3>
+        <p class="text-green-700 text-sm leading-relaxed">
+          Rata-rata bibit durian unggul bisa mulai berbuah dalam 4-5 tahun
+          dengan perawatan yang baik.
+        </p>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="bg-green-50 rounded-2xl shadow-md p-6">
+        <h3 class="font-bold text-green-900 text-lg mb-2">
+          Bagaimana cara pesan produk Boss Duren?
+        </h3>
+        <p class="text-green-700 text-sm leading-relaxed">
+          Kamu bisa langsung klik tombol “Beli Sekarang” di produk, atau hubungi
+          admin via WhatsApp untuk order cepat.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta" class="relative py-20 bg-gradient-to-r from-green-700 to-green-900 text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+    <!-- Judul -->
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-6">
+      🍈 Siap Nikmati Durian Terbaik dari <span class="text-yellow-400">Boss Duren</span>?
+    </h2>
+    <p class="text-lg md:text-xl mb-10 text-green-100">
+      Pesan sekarang dan rasakan sensasi legit, manis, serta creamy khas durian unggulan.  
+      Stok terbatas – jangan sampai kehabisan!
+    </p>
+
+    <!-- Tombol CTA -->
+    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+      <a href="https://wa.me/6281234567890" target="_blank"
+         class="px-8 py-4 bg-yellow-400 text-green-900 text-lg font-bold rounded-2xl shadow-lg hover:bg-yellow-500 transition">
+        📲 Pesan via WhatsApp
+      </a>
+      <a href="#produk"
+         class="px-8 py-4 bg-white text-green-900 text-lg font-bold rounded-2xl shadow-lg hover:bg-green-100 transition">
+        📦 Lihat Semua Produk
+      </a>
+    </div>
+  </div>
+
+  <!-- Dekorasi -->
+  <div class="absolute inset-0 opacity-10">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Durian.png" 
+         alt="Durian Background" 
+         class="w-full h-full object-cover">
+  </div>
+</section>
+
+<footer class="bg-green-950 text-green-100 py-12 relative">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <!-- Brand -->
+    <div>
+      <h3 class="text-2xl font-extrabold text-yellow-400 mb-4">🍈 Boss Duren</h3>
+      <p class="text-green-200 text-sm leading-relaxed">
+        Penyedia durian segar, frozen, dan bibit unggul.  
+        Dari kebun langsung ke meja makan Anda.
+      </p>
+    </div>
+
+    <!-- Navigasi -->
+    <div>
+      <h4 class="text-xl font-bold text-yellow-400 mb-4">Navigasi</h4>
+      <ul class="space-y-2 text-green-200">
+        <li><a href="#produk" class="hover:text-yellow-400 transition">Produk</a></li>
+        <li><a href="#tentang" class="hover:text-yellow-400 transition">Tentang Kami</a></li>
+        <li><a href="#testimoni" class="hover:text-yellow-400 transition">Testimoni</a></li>
+        <li><a href="#faq" class="hover:text-yellow-400 transition">FAQ</a></li>
+        <li><a href="#cta" class="hover:text-yellow-400 transition">Pesan Sekarang</a></li>
+      </ul>
+    </div>
+
+    <!-- Kontak -->
+    <div>
+      <h4 class="text-xl font-bold text-yellow-400 mb-4">Kontak Kami</h4>
+      <ul class="space-y-3 text-green-200 text-sm">
+        <li>📍 Alamat: Jl. Durian No. 123, Indonesia</li>
+        <li>📞 Telp: +62 812-3456-7890</li>
+        <li>✉️ Email: <a href="mailto:info@bosduren.com" class="hover:text-yellow-400">info@bosduren.com</a></li>
+        <li class="flex gap-4 mt-2">
+          <a href="#" class="hover:text-yellow-400 text-lg">🌐</a>
+          <a href="#" class="hover:text-yellow-400 text-lg">📘</a>
+          <a href="#" class="hover:text-yellow-400 text-lg">📸</a>
+          <a href="#" class="hover:text-yellow-400 text-lg">🎥</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-green-800 mt-10 pt-6 text-center text-green-400 text-sm">
+    © 2025 Boss Duren. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
