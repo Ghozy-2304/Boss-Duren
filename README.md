@@ -32,11 +32,11 @@ Menjadi perusahaan durian terpercaya di Indonesia yang menghadirkan produk segar
 
 | Logo | Nama Partner |
 |------|-------------|
-| ![Partner 1](Assets/dt.jpg) | Partner 1 |
-| ![Partner 2](Assets/logo1.png) | Partner 2 |
-| ![Partner 3](Assets/logo2.jpg) | Partner 3 |
-| ![Partner 4](Assets/logo3.jpg) | Partner 4 |
-| ![Partner 5](Assets/logo4.jpg) | Partner 5 |
+| <img src="Assets/dt.jpg" alt="Partner 1" width="120" height="80"> | Partner 1 |
+| <img src="Assets/logo1.png" alt="Partner 2" width="120" height="80"> | Partner 2 |
+| <img src="Assets/logo2.jpg" alt="Partner 3" width="120" height="80"> | Partner 3 |
+| <img src="Assets/logo3.jpg" alt="Partner 4" width="120" height="80"> | Partner 4 |
+| <img src="Assets/logo4.jpg" alt="Partner 5" width="120" height="80"> | Partner 5 |
 
 *(Tambahkan logo dan info partner sesuai kebutuhan)*
 
