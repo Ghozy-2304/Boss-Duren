@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smoth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
 </head>
 <body>
     <!-- Navbar -->
@@ -28,25 +27,34 @@
 
         <!-- Desktop menu -->
         <div class="hidden md:flex items-center mx-auto space-x-5">
-            <a href="#program" class="py-5 px-3 border-b-[12px] border-black text-black font-bold text-xl transition-colors duration-500 boldel rounded-lg">Home</a>
-            <a href="#program" class="py-5 px-3 text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500 boldel">About Us</a>
-            <a href="#galeri" class="py-5 px-3 text-black font-bold text-xl hover:text-opacity-30 transition-colors duration-500 boldel">Product</a>
-        </div>
+           
+            <a href="#home" 
+              class="teks nav-link py-5 px-3 border-b-[10px] border-black text-black font-bold text-xl transition-all duration-300 ease-in-out boldel rounded-lg hover:text-gray-500">
+              Home
+            </a>
+            <a href="#tentang-kami" 
+              class="teks nav-link py-5 px-3 border-transparent border-black text-black font-bold text-xl transition-all duration-300 ease-in-out boldel rounded-lg">
+              Tentang Kami
+            </a>
+            <a href="#contact" 
+              class="teks nav-link py-5 px-3 border-transparent border-black text-black font-bold text-xl transition-all duration-300 ease-in-out boldel rounded-lg">
+              Kontak
+            </a>
+</div>
 
         <!-- Button Contact Us -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
-   target="_blank" rel="noopener noreferrer"
-   class="hidden md:inline-block bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold px-6 py-2.5
-          rounded-xl shadow-md transition transform hover:scale-105 duration-300">
-  Contact Us
-</a>
+          <a href="https://wa.me/6282299498874"
+            target="_blank"
+            class="hidden md:inline-block bg-green-700 hover:bg-green-800 hover:scale-105 text-white font-bold px-5 py-3 rounded-xl text-center shadow-lg transition duration-300">
+            🌿 Hubungi Kami
+          </a>
         <!-- judul di mobile -->
-        <a class="font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 md:hidden">
+        <a class="teks font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 md:hidden">
         Boss Duren
         </a>
 
         <!-- Hamburger button (mobile only) -->
-        <button id="hamburger" class="ml-auto md:hidden text-gray-700 focus:outline-none">
+        <button id="hamburger" class="teks ml-auto md:hidden text-black focus:outline-none">
         <svg class="w-8 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"/>
@@ -55,26 +63,45 @@
     </nav>
 
     <!-- Sidebar mobile menu -->
-    <div id="mobileMenu"
-        class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full 
-              transition-transform duration-300 ease-in-out z-50 rounded-lg">
-        <div class="flex flex-col p-6 space-y-4">
-            <button id="closeMenu" class="self-end text-gray-600 font-black hover:text-gray-900">
+<div id="mobileMenu"
+    class="fixed top-0 right-0 h-full w-64 bg-gradient-to-b from-yellow-50 to-green-50 shadow-xl transform translate-x-full 
+          transition-transform duration-300 ease-in-out z-50 rounded-l-2xl border-l-4 border-green-700">
+    
+    <!-- Header close -->
+    <div class="flex justify-between items-center px-6 py-4 border-b border-green-200">
+        <h2 class="text-lg font-bold text-green-800">🍈 Boss Duren</h2>
+        <button id="closeMenu" class="text-green-700 hover:text-green-900 font-black text-xl">
             ✕
-            </button>
-            <a href="#home" class="text-gray-700 hover:text-white hover:bg-[#3390FF] hover:bg-opacity-70 rounded-xl menuMobile p-1">Home</a>
-            <a href="#program" class="text-gray-700 hover:text-white hover:bg-[#3390FF] hover:bg-opacity-70 rounded-xl menuMobile p-1">About Us</a>
-            <a href="#galeri" class="text-gray-700 hover:text-white hover:bg-[#3390FF] hover:bg-opacity-70 rounded-xl menuMobile p-1">Contact</a>
-            <a href=""
-                target="_blank"
-                class="bg-[#2E7D32] hover:bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-center">
-                Contact Us
-            </a>
-        </div>
+        </button>
     </div>
 
+    <!-- Menu items -->
+    <div class="flex flex-col p-6 space-y-3">
+        <a href="#home" 
+           class="nav-mobile menuMobile text-white bg-yellow-400 font-semibold rounded-lg px-4 py-2 transition">
+           🏠Home
+        </a>
+        <a href="#tentang-kami" 
+           class="nav-mobile menuMobile text-green-900 font-semibold hover:bg-yellow-400 hover:text-white rounded-lg px-4 py-2 transition">
+           📖Tentang Kami
+        </a>
+        <a href="#contact" 
+           class="nav-mobile menuMobile text-green-900 font-semibold hover:bg-yellow-400 hover:text-white rounded-lg px-4 py-2 transition">
+           📧Kontak
+        </a>
+        
+        <!-- CTA -->
+        <a href="https://wa.me/6282299498874"
+           target="_blank"
+           class="mt-4 bg-green-700 hover:bg-green-800 text-white font-bold px-5 py-3 rounded-xl text-center shadow-lg transition">
+           🌿 Hubungi Kami
+        </a>
+    </div>
+</div>
+
+
     <!-- Hero Banner -->
-    <section id="hero" class="relative w-full">
+    <section id="home" class="relative w-full">
         <img src="https://cdn.digitaldesa.com/uploads/profil/61.04.05.2016/berita/29b31c5056c9b765dfdd7a05dbe05e1f.png" 
             alt="Hero Banner" 
             class="w-full h-[60vh] md:h-[80vh] lg:h-[100vh] object-cover object-left">
@@ -93,45 +120,46 @@
             </a>
         </div>
     </section>
-<section class="bg-black text-white py-16 px-6 md:px-20">
-  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-    
-    <!-- Orderan -->
-    <div>
-      <h3 class="text-4xl font-bold mb-2">
-        <span class="counter" data-target="50000000">0</span>+
-      </h3>
-      <p class="text-gray-300">Orderan</p>
+  <section id="home-2" class="bg-black text-white py-16 px-6 md:px-20">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      
+      <!-- Orderan -->
+      <div>
+        <h3 class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="50000000">0</span>+
+        </h3>
+        <p class="text-gray-300">Orderan</p>
+      </div>
+
+      <!-- Partner Petani -->
+      <div>
+        <h3 class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="100">0</span>+
+        </h3>
+        <p class="text-gray-300">Partner Petani</p>
+      </div>
+
+      <!-- Jenis Buah -->
+      <div>
+        <h3 class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="50">0</span>+
+        </h3>
+        <p class="text-gray-300">Jenis Buah</p>
+      </div>
+
+      <!-- Negara Ekspor -->
+      <div>
+        <h3 class="text-4xl font-bold mb-2">
+          <span class="counter" data-target="40">0</span>+
+        </h3>
+        <p class="text-gray-300">Negara Ekspor</p>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Partner Petani -->
-    <div>
-      <h3 class="text-4xl font-bold mb-2">
-        <span class="counter" data-target="100">0</span>+
-      </h3>
-      <p class="text-gray-300">Partner Petani</p>
-    </div>
-
-    <!-- Jenis Buah -->
-    <div>
-      <h3 class="text-4xl font-bold mb-2">
-        <span class="counter" data-target="50">0</span>+
-      </h3>
-      <p class="text-gray-300">Jenis Buah</p>
-    </div>
-
-    <!-- Negara Ekspor -->
-    <div>
-      <h3 class="text-4xl font-bold mb-2">
-        <span class="counter" data-target="40">0</span>+
-      </h3>
-      <p class="text-gray-300">Negara Ekspor</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="bg-[#fdf5e6] py-16">
+<!-- Tentang Kami -->
+<section id="tentang-kami" class="bg-[#fdf5e6] py-16">
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
     
     <!-- Bagian Teks -->
@@ -177,7 +205,7 @@
   </div>
 </section>
 
-<section class="bg-[#fdf6e3] text-gray-900 py-16 px-6 md:px-10 lg:px-20">
+<section id="tentang-kami-2" class="bg-[#fdf6e3] text-gray-900 py-16 px-6 md:px-10 lg:px-20">
   <div class="max-w-6xl mx-auto">
     <!-- Judul -->
     <div class="text-center mb-12">
@@ -216,7 +244,7 @@
   </div>
 </section>
 
-<section class="bg-black text-white py-16 px-6 md:px-20">
+<section id="tentang-kami-3" class="bg-black text-white py-16 px-6 md:px-20">
   <div class="max-w-6xl mx-auto">
     <!-- Judul -->
     <div class="text-center mb-12">
@@ -261,7 +289,7 @@
   </div>
 </section>
 
-<section class="bg-gray-50 py-16 px-6 md:px-20">
+<section id="tentang-kami-4" class="bg-gray-50 py-16 px-6 md:px-20">
   <div class="max-w-6xl mx-auto">
     <!-- Judul -->
     <div class="text-center mb-12">
@@ -307,7 +335,7 @@
 </section>
 
 <!-- Testimonial -->
-<section id="testimonials" class="bg-[#fdf6e3] py-16 px-6 md:px-20">
+<section id="tentang-kami-5" class="bg-[#fdf6e3] py-16 px-6 md:px-20">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-8">
       <h2 class="text-3xl font-bold text-black">Testimoni</h2>
@@ -369,7 +397,7 @@
 </section>
 
 <!-- Partners / Clients -->
-<section id="partners" class="py-12 bg-white">
+<section id="tentang-kami-6" class="py-12 bg-white">
   <div class="max-w-6xl mx-auto px-6">
     <h3 class="text-center text-2xl font-bold mb-6">Klien & Partner</h3>
 
@@ -403,6 +431,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- CTA & Contact -->
 <section id="contact" class="bg-black text-white py-16 px-6 md:px-20">
