@@ -100,6 +100,7 @@ counters.forEach(counter => {
 
   // Daftar section kecil yg dianggap bagian dari tentang-kami
   const miniSections = ["tentang-kami-1", "tentang-kami-2", "tentang-kami-3", "tentang-kami-4", "tentang-kami-5", "tentang-kami-6"];
+  const produk = ["frozen", "olahan", "bibit"]
 
   window.addEventListener("scroll", () => {
     let current = "";
@@ -121,6 +122,14 @@ counters.forEach(counter => {
       // 👉 jika current ada di daftar miniSections, paksa current = "home"
   if (miniSections.includes(current)) {
     current = "tentang-kami";
+  }
+
+  if (produk.includes(current)) {
+    current = "buah"
+  }
+
+  if (current === "faq") {
+    current = "testimoni"
   }
 
     navLinks.forEach(link => {
